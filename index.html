@@ -8,22 +8,31 @@
   <script src="p5.play.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script> 
   <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
-   <script> 
-   var firebaseConfig = {
+ 
+  // Import the functions you need from the SDKs you need
+ import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+ <script>
+ var firebaseConfig = {
   apiKey: "AIzaSyCO87ljyqkJnw4UwKtlHqxMl-w-Sr6aYeY",
   authDomain: "car-race-df0bb.firebaseapp.com",
+  databaseURL: "https://car-race-df0bb-default-rtdb.firebaseio.com",
   projectId: "car-race-df0bb",
   storageBucket: "car-race-df0bb.appspot.com",
   messagingSenderId: "462214626185",
   appId: "1:462214626185:web:059cffce547d51f833bf58"
 };
-    
-firebase.initializeApp(firebaseConfig); 
-  </script> 
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+  </script>
   <script src="Player.js"></script>
     <script src="Form.js"></script>
       <script src="Game.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css"/> 
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head> 
     <body> 
           <script src="sketch.js"></script>
